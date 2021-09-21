@@ -32,7 +32,15 @@ import homes from "~/data/homes"
 export default {
   head() {
     return {
-      title: this.home.title
+      title: this.home.title,
+      script: [
+        {
+          src:
+            "https://maps.googleapis.com/maps/api/js?key=AIzaSyD990DWC8s_FWAmQpjjd9-L5QmRXfKci-8&libraries=places",
+          hid: "map",
+          defer: true
+        }
+      ]
     }
   },
   data() {
