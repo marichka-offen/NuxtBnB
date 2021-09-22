@@ -12,7 +12,10 @@
 <script>
 export default {
   props: {
-    home: { type: Object, required: true }
+    home: {
+      type: Object,
+      required: true
+    }
   }
 }
 </script>

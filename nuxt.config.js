@@ -1,7 +1,8 @@
 export default {
   components: true, // not necessary to import and define components anymore
   head: {
-    titleTemplate: "Mastering Nuxt: %s",
+    // global meta
+    titleTemplate: "NuxtBnB: %s",
     htmlAttrs: {
       lang: "en"
     },
@@ -11,9 +12,11 @@ export default {
     meta: [
       {
         charset: "utf-8"
+      },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
       }
     ]
   }
 }
-
-// AIzaSyD990DWC8s_FWAmQpjjd9-L5QmRXfKci-8

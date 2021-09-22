@@ -5,6 +5,7 @@
       :key="home.objectID"
       style="float:left;margin:10px"
     >
+      <!-- nuxt-link prefetches linked pages -->
       <nuxt-link :to="`/home/${home.objectID}`" no-prefetch
         ><home-card :home="home"
       /></nuxt-link>
